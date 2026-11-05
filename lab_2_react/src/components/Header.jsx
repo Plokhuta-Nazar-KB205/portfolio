@@ -16,7 +16,7 @@ function Header({ theme, onToggleTheme }) {
       </button>
       <img src={photo} alt="Фото Назара Плохути" width="200" height="200" />
       <h1>Назар Плохута</h1>
-      <p>Junior Backend Developer</p>
+      <p>Junior Backend Developer · Python / FastAPI</p>
 
       <nav>
         <ul>
