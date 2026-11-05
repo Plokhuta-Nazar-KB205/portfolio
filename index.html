@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Резюме Назара Плохути — Junior Backend Developer, студента Національного університету «Львівська політехніка»"
+    />
+    <title>Назар Плохута — CV</title>
+
+    <!-- Зовнішні стилі (external) -->
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+
+    <!-- Внутрішні стилі (internal): змінні теми та друк -->
+    <style>
+      :root {
+        --accent: #2563eb;
+        --accent-dark: #1e40af;
+        --accent-soft: #eff4ff;
+      }
+
+      @media print {
+        nav,
+        .photo {
+          display: none;
+        }
+        .card {
+          box-shadow: none;
+          border: 1px solid #ccc;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">
+        <span id="theme-toggle-icon" aria-hidden="true">🌙</span>
+        <span id="theme-toggle-label">Нічна тема</span>
+      </button>
+      <img class="photo" src="photo.png" alt="Фото Назара Плохути" width="200" height="200" />
+      <h1>Назар Плохута</h1>
+      <!-- Інлайн-стиль (inline) -->
+      <p class="tagline" style="font-weight: bold;">Junior Backend Developer</p>
+
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#about">Про мене</a></li>
+          <li><a href="#education">Освіта</a></li>
+          <li><a href="#experience">Досвід</a></li>
+          <li><a href="#skills">Навички</a></li>
+          <li><a href="#achievements">Досягнення</a></li>
+          <li><a href="#interests">Інтереси</a></li>
+          <li><a href="#reviews">Відгуки</a></li>
+          <li><a href="#contacts">Контакти</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="layout">
+      <section id="about" class="card">
+        <h2>Про мене</h2>
+        <p>
+          Студент Національного університету «Львівська політехніка», спеціальність
+          «Кібербезпека та захист інформації». Спеціалізуюся на backend-розробці:
+          проєктую та створюю надійні, безпечні й добре протестовані сервіси на
+          Python, працюю з FastAPI, Pydantic v2 та базами даних.
+        </p>
+        <p>
+          Паралельно професійно займаюся спортом: віцечемпіон Європи з добового
+          рогейну та член основного складу збірної України зі спортивного
+          орієнтування. Спорт виховав у мене витривалість, дисципліну, вміння
+          швидко приймати рішення в умовах невизначеності та працювати в команді.
+        </p>
+      </section>
+
+      <section id="education" class="card">
+        <h2>Освіта</h2>
+        <article>
+          <h3>Національний університет «Львівська політехніка»</h3>
+          <p>
+            Спеціальність: Кібербезпека та захист інформації<br />
+            Кафедра захисту інформації
+          </p>
+          <p>Навчання: <time datetime="2025">2025</time> — теперішній час</p>
+        </article>
+      </section>
+
+      <section id="experience" class="card">
+        <h2>Досвід</h2>
+        <p>
+          Комерційного досвіду поки немає — я на етапі навчання. Практичні навички
+          здобуваю, виконуючи навчальні роботи та власні проєкти.
+        </p>
+        <ul>
+          <li>Виконання лабораторних і практичних робіт в університеті</li>
+          <li>
+            Приклади моїх проєктів доступні на
+            <a href="https://github.com/Nazar-Plokhuta">GitHub</a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="skills" class="card">
+        <h2>Навички</h2>
+
+        <div class="skill-group">
+          <h3>Технічні навички</h3>
+          <ul>
+            <li>Мови програмування: Python, C#</li>
+            <li>Backend: FastAPI, Pydantic v2</li>
+            <li>Автоматизація браузера: Playwright</li>
+            <li>Тестування: Pytest</li>
+            <li>Контейнеризація: Docker</li>
+            <li>Бази даних</li>
+            <li>
+              Операційні системи: Linux та Windows — просунутий рівень
+              користування та налаштування
+            </li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3>Особисті якості</h3>
+          <ul class="tags">
+            <li>Комунікабельність</li>
+            <li>Лідерські якості</li>
+            <li>Вміння швидко приймати рішення</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3>Мови</h3>
+          <ul class="tags">
+            <li>Українська — рідна</li>
+            <li>Англійська — B2 (середній вищий)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="achievements" class="card">
+        <h2>Спортивні досягнення</h2>
+        <ul>
+          <li>Віцечемпіон Європи з добового рогейну</li>
+          <li>
+            Член основного складу збірної України зі спортивного орієнтування
+            (другий рік)
+          </li>
+          <li>Учасник змагань з рогейну на 6, 12 та 24 години</li>
+        </ul>
+      </section>
+
+      <section id="interests" class="card">
+        <h2>Інтереси</h2>
+        <ul class="tags">
+          <li>Спортивне орієнтування та рогейн</li>
+          <li>Лижі</li>
+          <li>Велосипед</li>
+          <li>Плавання</li>
+          <li>Кулінарія, особливо приготування десертів</li>
+        </ul>
+      </section>
+
+      <section id="reviews" class="card" aria-live="polite">
+        <h2>Відгуки</h2>
+        <p id="reviews-status" class="reviews-status">Завантаження відгуків…</p>
+        <div id="reviews-list" class="reviews-list"></div>
+      </section>
+    </main>
+
+    <footer id="contacts" class="site-footer">
+      <h2>Контакти</h2>
+      <address>
+        <ul>
+          <li>
+            Email:
+            <a href="mailto:nazar.plokhuta.kb.2025@lpnu.ua"
+              >nazar.plokhuta.kb.2025@lpnu.ua</a
+            >
+          </li>
+          <li>
+            GitHub:
+            <a href="https://github.com/Nazar-Plokhuta" target="_blank" rel="noopener noreferrer"
+              >github.com/Nazar-Plokhuta</a
+            >
+          </li>
+          <li>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/nazarplokhuta/" target="_blank" rel="noopener noreferrer"
+              >linkedin.com/in/nazarplokhuta</a
+            >
+          </li>
+        </ul>
+      </address>
+      <section class="system-info" aria-labelledby="system-info-title">
+        <h3 id="system-info-title">Інформація про систему (з localStorage)</h3>
+        <dl id="system-info" class="system-info-list"></dl>
+      </section>
+      <p><small>&copy; 2026 Назар Плохута</small></p>
+    </footer>
+
+    <dialog id="contact-modal" class="modal" aria-labelledby="contact-modal-title">
+      <div class="modal-content">
+        <button type="button" id="contact-modal-close" class="modal-close" aria-label="Закрити">
+          &times;
+        </button>
+        <h2 id="contact-modal-title">Зворотний зв’язок</h2>
+        <form action="https://formspree.io/f/xrpppgew" method="POST" class="contact-form">
+          <label for="cf-name">Ім’я</label>
+          <input type="text" id="cf-name" name="name" autocomplete="name" required />
+
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email" autocomplete="email" required />
+
+          <label for="cf-phone">Номер телефону</label>
+          <input type="tel" id="cf-phone" name="phone" autocomplete="tel" required />
+
+          <label for="cf-message">Повідомлення</label>
+          <textarea id="cf-message" name="message" rows="4" required></textarea>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Надіслати</button>
+            <button type="button" id="contact-modal-cancel" class="btn">Закрити</button>
+          </div>
+        </form>
+      </div>
+    </dialog>
+  </body>
+</html>
